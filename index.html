@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Healthy Homemade Foods</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="header-container">
+
+<img src="images/logo.png" class="logo">
+
+<div class="title">
+
+<h1>SR Homemade Foods</h1>
+<p>Fresh • Homemade • Healthy</p>
+
+</div>
+
+</div>
+
+</header>
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<h2>Our Products</h2>
+
+<!-- Curry Leaf Podi -->
+
+<div class="product">
+
+<div class="slider">
+
+<img src="images/curry1.jpg" class="slide active">
+<img src="images/curry2.jpg" class="slide">
+<img src="images/curry3.jpg" class="slide">
+
+<div class="dots">
+<span class="dot active" onclick="currentSlide(this,0)"></span>
+<span class="dot" onclick="currentSlide(this,1)"></span>
+<span class="dot" onclick="currentSlide(this,2)"></span>
+</div>
+
+</div>
+
+<h3>🌿 Curry Leaf Podi</h3>
+
+<p>Healthy iron-rich podi made from fresh curry leaves.</p>
+
+<p class="price">₹80 / 100gm</p>
+
+<a href="https://wa.me/918056548242?text=I want to order Curry Leaf Podi">
+<button>Order on WhatsApp</button>
+</a>
+
+</div>
+
+
+
+<!-- Kollu Podi -->
+
+<div class="product">
+
+<div class="slider">
+
+<img src="images/kollu1.jpg" class="slide active">
+<img src="images/kollu2.jpg" class="slide">
+<img src="images/kollu3.jpg" class="slide">
+
+<div class="dots">
+<span class="dot active" onclick="currentSlide(this,0)"></span>
+<span class="dot" onclick="currentSlide(this,1)"></span>
+<span class="dot" onclick="currentSlide(this,2)"></span>
+</div>
+
+</div>
+
+<h3>🌾 Kollu Podi</h3>
+
+<p>Protein-rich horse gram podi good for weight management.</p>
+
+<p class="price">₹90 / 100gm</p>
+
+<a href="https://wa.me/918056548242?text=I want to order Kollu Podi">
+<button>Order on WhatsApp</button>
+</a>
+
+</div>
+
+
+
+<!-- Ulundhu Mix -->
+
+<div class="product">
+
+<div class="slider">
+
+<img src="images/ulundhu1.jpg" class="slide active">
+<img src="images/ulundhu2.jpg" class="slide">
+<img src="images/ulundhu3.jpg" class="slide">
+
+<div class="dots">
+<span class="dot active" onclick="currentSlide(this,0)"></span>
+<span class="dot" onclick="currentSlide(this,1)"></span>
+<span class="dot" onclick="currentSlide(this,2)"></span>
+</div>
+
+</div>
+
+<h3>🥣 Ulundhu Mix</h3>
+
+<p>Nutritious mix for strength and bone health.</p>
+
+<p class="price">₹100 / 100gm</p>
+
+<a href="https://wa.me/918056548242?text=I want to order Ulundhu Mix">
+<button>Order on WhatsApp</button>
+</a>
+
+</div>
+
+
+
+<!-- Murungai Podi -->
+
+<div class="product">
+
+<div class="slider">
+
+<img src="images/murungai1.jpg" class="slide active">
+<img src="images/murungai2.jpg" class="slide">
+<img src="images/murungai3.jpg" class="slide">
+
+<div class="dots">
+<span class="dot active" onclick="currentSlide(this,0)"></span>
+<span class="dot" onclick="currentSlide(this,1)"></span>
+<span class="dot" onclick="currentSlide(this,2)"></span>
+</div>
+
+</div>
+
+<h3>🌱 Murungai Keerai Podi</h3>
+
+<p>Rich in calcium and vitamins.</p>
+
+<p class="price">₹90 / 100gm</p>
+
+<a href="https://wa.me/918056548242?text=I want to order Murungai Keerai Podi">
+<button>Order on WhatsApp</button>
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT US -->
+
+<section class="about">
+
+<h2>About Us</h2>
+
+<p>
+Susi and Raji are two passionate business women from Namakkal district who started a small homemade food business with the goal of providing healthy and traditional foods to families.
+</p>
+
+<p>
+We specialize in preparing healthy homemade podi and nutritious mixes using fresh and natural ingredients. Our products are prepared hygienically without preservatives.
+</p>
+
+<p>
+We provide delivery services all over Tamil Nadu so customers can enjoy healthy homemade foods anywhere.
+</p>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Business Name:</strong> Healthy Homemade Foods</p>
+
+<p><strong>Phone / WhatsApp:</strong> </p>
+<p>📞 +91 94886 26884</p> <p>📞 +91 80565 48242</p>
+
+<p><strong>Location:</strong> Namakkal, Tamil Nadu</p>
+
+<p>
+<strong>Tell Us:</strong><br>
+If you have any questions, bulk orders, or special requests,
+feel free to contact us anytime. We are happy to serve
+healthy homemade foods to your family.
+</p>
+<p>
+<a href="https://wa.me/919488626884">
+<button>Contact on WhatsApp</button>
+</a>
+</p>
+
+</section>
+
+
+<!-- SCRIPT -->
+
+<script>
+
+function currentSlide(dot,index) {
+
+let slider = dot.parentElement.parentElement;
+
+let slides = slider.querySelectorAll(".slide");
+let dots = slider.querySelectorAll(".dot");
+
+slides.forEach(slide => slide.classList.remove("active"));
+dots.forEach(dot => dot.classList.remove("active"));
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
